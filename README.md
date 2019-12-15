@@ -97,3 +97,7 @@ The students are asked to complete the following tasks:
 * Creating a second model 'model_2' with the default settings except epochs=5
 (runtime = 2h30)
 * Creating a jitcompile.py for both models
+* preparing a third model with new parameters :
+  * batch_size = 64 instead of 32 should be better but will take more time to train
+  * Learning rate : one of the most important hyperparameter : which is the "speed at which the model learns". learning_rate = 5*1e-4 instead of 1e-3 The bigger is the learning rate, the faster the model is trained, but it will not learn at its best. But if the learning rate is too small, the training may get stucked. So I halved it.
+  * let the n_workers to 4 : it should use most of the gpu. Found out that the recommended of workers should be 4 * the number of gpu we have. I assume colab gives only 1 gpu.
