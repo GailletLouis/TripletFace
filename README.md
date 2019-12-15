@@ -101,3 +101,10 @@ The students are asked to complete the following tasks:
   * batch_size = 64 instead of 32 should be better but will take more time to train
   * Learning rate : one of the most important hyperparameter : which is the "speed at which the model learns". learning_rate = 5*1e-4 instead of 1e-3 The bigger is the learning rate, the faster the model is trained, but it will not learn at its best. But if the learning rate is too small, the training may get stucked. So I halved it.
   * let the n_workers to 4 : it should use most of the gpu. Found out that the recommended of workers should be 4 * the number of gpu we have. I assume colab gives only 1 gpu.
+
+## What I learned but could not do :
+* Resnet is a neural network already trained for image classification and we want to specialize it with the triplet loss method. We could have change resnet for another pytorch neural network at the line  :
+  self.resnet    = models.resnet18( pretrained = True )
+but i did not know which one to choose and why
+* Centroid is the average position of all profilenpictures on the graph in our project.
+* Threshold is the limite of the zone which determine whether or not a photo is similar to a group of photos representing one person
