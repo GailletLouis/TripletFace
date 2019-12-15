@@ -90,3 +90,10 @@ The students are asked to complete the following tasks:
 * Add inference script in order to use the final model
 * Change README.md in order to include the student choices explained and a table containing the Centroids and Thesholds for each student of the dataset with a vizualisation ( See the one above )
 * Send the github link by mail
+
+## Done :
+* Fork the project
+* Creating a first model 'model' with the default settings except epochs=3 (runtime = 1h30)
+* Creating a second model 'model_2' with the default settings except epochs=5
+(runtime = 2h30)
+* Creating a jitcompile.py for both models
